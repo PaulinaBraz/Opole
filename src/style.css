@@ -153,7 +153,7 @@ footer a {
   grid-template-columns: 1fr 1fr 1fr;
 }
 .img-responsive {
-  max-width: 100%;
+  width: 100%;
   display: block;
 }
 .festival {
@@ -193,6 +193,17 @@ footer a {
 
 .card-footer {
   padding: 0 30px 30px;
+}
+.embed {
+  width: 100%;
+  aspect-ratio: 1 /1;
+}
+
+.instagram-embeds {
+  margin: 30px 0;
+}
+.card-header.grid {
+  grid-gap: 0;
 }
 
 .btn {
@@ -246,5 +257,12 @@ footer a {
   }
   .img-responsive {
     display: none;
+  }
+  .card-header img {
+    display: none;
+  }
+
+  .embed {
+    aspect-ratio: 16 / 9;
   }
 }
