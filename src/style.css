@@ -5,6 +5,11 @@ body {
   font-family: var(--main-font);
   background-color: white;
 }
+
+section {
+  max-width: 1200px;
+  margin: 0 auto;
+}
 header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
     url(/images/panorama.jpg);
@@ -36,9 +41,55 @@ header h2 {
   font-weight: 400px;
   line-height: 1.5;
 }
+footer {
+  color: white;
+  background-image: linear-gradient(
+      rgba(57, 40, 126, 0.4),
+      rgba(99, 88, 143, 0.6)
+    ),
+    url("/images/festiwal.jpeg");
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 80px 0;
+}
+
+footer h3 {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+footer p {
+  font-weight: 400;
+  font-size: 16px;
+  opacity: 0.8;
+  margin-right: 20px;
+  line-height: 24px;
+  text-align: justify;
+}
+
+footer ul {
+  padding: 0;
+}
+
+footer li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+footer a {
+  color: white;
+  opacity: 0.7;
+  text-decoration: none;
+}
 .container {
   max-width: 1200px;
   margin: 0 auto;
+}
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr;
 }
 
 .festival {
@@ -50,7 +101,11 @@ header h2 {
   text-decoration: none;
   display: inline-block;
 }
-@media (max-width: 900px) {
+.more {
+  margin-left: 10px;
+  padding-left: 10px;
+}
+@media (max-width: 960px) {
   header {
     padding: 60px 0;
   }
